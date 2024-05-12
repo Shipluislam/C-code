@@ -1,0 +1,22 @@
+//White a C program to read four-digit integers and print the sum of its digits. Hint: Use
+#include<stdio.h>
+main()
+{
+    int four_digite_integer,sum=0,digit;
+    printf("Enter four digit integer: ");
+    scanf("%d",&four_digite_integer);
+    if(four_digite_integer>=1111 && four_digite_integer<=9999)
+    {
+        while(four_digite_integer>0)
+        {
+            digit=four_digite_integer%10;
+            sum=sum+digit;
+            four_digite_integer=four_digite_integer/10;
+        }
+        printf("The sum of four digit integer is: %d",sum);
+    }
+    else
+    {
+        printf("Error! Please enter four digit integer.");
+    }
+}
