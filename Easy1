@@ -1,0 +1,13 @@
+//(2.14) A point on the circumference of a circle whose center is (0,0) is (4,5). Write a program to compute the perimeter and the area of circle.
+#include<stdio.h>
+#include<math.h>
+#define PI 3.1416
+main()
+{
+    float x1=0.0,x2=4.0,y1=0.0,y2=5.0,r,p,a;
+    r=sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1));
+    p=2*PI*r*r;
+    a=PI*r*r;
+    printf("The perimeter of circle is %f\nThe area of circle is %f",p,a);
+
+}
