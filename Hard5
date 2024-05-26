@@ -1,0 +1,14 @@
+//(4.6) Input time, initial velocity, and acceleration. Output distance.
+#include<stdio.h>
+main()
+{
+    float u,a,t,distance;
+    printf("Enter the initial velocity(m/s): ");
+    scanf("%f",&u);
+    printf("\nEnter the acceleration(m/s^2): ");
+    scanf("%f",&a);
+    printf("\nEnter the time: ");
+    scanf("%f",&t);
+    distance=u*t+(a*t*t)/2;
+    printf("Distance = %.2f metres/second",distance);
+}
