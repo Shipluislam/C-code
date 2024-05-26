@@ -1,0 +1,15 @@
+// Find the sum of input number digit. 
+#include<stdio.h>
+main()
+{
+    int n,d,s=0;
+    printf("Enter a integer number: ");
+    scanf("%d",&n);
+    while(n>0)
+    {
+        d=n%10;
+        s=s+d;
+        n=n/10;
+    }
+    printf("\nThe sum of the digits are: %d",s);
+}
