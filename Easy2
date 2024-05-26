@@ -1,0 +1,40 @@
+//(6.16) Write a C program to input the numeric weekday value (starting from Monday as 1) and display the corresponding name of the week.
+#include<stdio.h>
+main()
+{
+    int day;
+    printf("Enter the numeric weekday value (1 for Monday, 2 for Tuesday, ....., 7 for Sunday: ");
+    scanf("%d",&day);
+    if(day==1)
+    {
+        printf("The corresponding name of the week is Monday.\n");
+    }
+    else if(day==2)
+    {
+        printf("The corresponding name of the week is Tuesday.\n");
+    }
+    else if(day==3)
+    {
+        printf("The corresponding name of the week is Wednesday.\n");
+    }
+    else if(day==4)
+    {
+        printf("The corresponding name of the week is Thursday.\n");
+    }
+    else if(day==5)
+    {
+        printf("The corresponding name of the week is Friday.\n");
+    }
+    else if(day==6)
+    {
+        printf("The corresponding name of the week is Saturday.\n");
+    }
+    else if(day==7)
+    {
+        printf("The corresponding name of the week is Saturday.\n");
+    }
+    else
+    {
+        printf("Invalid week value.");
+    }
+}
