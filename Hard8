@@ -1,0 +1,25 @@
+/*
+(6.18) Write a C program to input the total percentage of marks of a student and display its Division using below rules.
+(a) Greater or equal to 80 percent - "First Division"
+(b) Greater or equal to 60 percent and less than 80 percent - "Second division".
+(c) Less than 60 percent - "Third division"
+*/
+#include<stdio.h>
+main()
+{
+    int m;
+    printf("Please enter your mark: ");
+    scanf("%d",&m);
+    if(m>=80)
+    {
+        printf("You got First Division.");
+    }
+    else if(m>=60 && m<80)
+    {
+        printf("You got Second Division.");
+    }
+    else
+    {
+        printf("You got Third Division.");
+    }
+}
