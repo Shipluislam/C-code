@@ -1,0 +1,35 @@
+//(4.19) Write a C program to input a date value and determine whether the entered day, month and year values are valid.
+#include<stdio.h>
+main()
+{
+    int d,m,y;
+    printf("Enter day, month, and year(in the format DD MM YYYY): ");
+    scanf("%d %d %d",&d,&m,&y);
+    if((y>0) && (m>=1 && m<=12) && (d>=1 && d<=31))
+    {
+        if((d>=1 && d<=31) && (m==1 || m==3 || m==5 || m==7 || m==8 || m==10 || m==12))
+        {
+            printf("\nValid date.");
+        }
+        else if((d>=1 && d<=30) && (m==4 || m==6 || m==9 || m==11))
+        {
+            printf("\nValid date.");
+        }
+        else if(d==28 && m==2 && y%4!=0)
+        {
+            printf("\nValid date.");
+        }
+        else if((d==29) && (m==2) && ((y%400==0) || (y%4==0 && y%100!=0)))
+        {
+            printf("\nValid date.");
+        }
+        else
+        {
+            printf("\nInvalid date!");
+        }
+    }
+    else
+    {
+        printf("\nInvalid date!");
+    }
+}
